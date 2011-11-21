@@ -1,0 +1,43 @@
+/*
+Project Option: Young at Heart Hospital Management System
+TEAM: The GUI Ducks
+CREATED BY: Abdelrahman Kamel
+*/
+
+CREATE TABLE STAFF(
+	Staff_ID VARCHAR2(8) 
+		CONSTRAINT STAFF_Staff_ID_PK PRIMARY KEY,
+	STF_Home_Phone VARCHAR2(12)
+		CONSTRAINT STAFF_STF_Home_Phone_NN NOT NULL,
+	STF_Cell_Phone VARCHAR2(12)
+		CONSTRAINT STAFF_STF_Cell_Phone_UK UNIQUE,
+	Position VARCHAR2(32)
+		CONSTRAINT STAFF_Position_NN NOT NULL,
+	Work_area VARCHAR2(32)
+		CONSTRAINT STAFF_Work_area_NN NOT NULL,
+	STF_address VARCHAR2(64)
+		CONSTRAINT STAFF_STF_address_NN NOT NULL,
+	STF_DoB DATE
+		CONSTRAINT STAFF_STF_DoB_NN NOT NULL,
+	STF_Gender VARCHAR2(1)
+		CONSTRAINT STAFF_STF_Gender_CK
+			CHECK(STF_Gender = 'M' OR STF_Gender = 'F')
+		CONSTRAINT STAFF_STF_Gender_NN NOT NULL,
+	Hrs_Per_Week NUMERIC(3)
+		CONSTRAINT STAFF_Hrs_Per_Week_NN NOT NULL,
+	Payment_type VARCHAR2(1)
+		CONSTRAINT STAFF_Payment_type_CK
+			CHECK(Payment_type = 'W' OR Payment_type = 'M')
+		CONSTRAINT STAFF_Payment_type_NN NOT NULL,
+	Contract_type VARCHAR2(1)
+		CONSTRAINT STAFF_Contract_type_CK
+			CHECK(Contract_type = 'P' OR Contract_type = 'T')
+		CONSTRAINT STAFF_Contract_type_NN NOT NULL,
+	STF_Fname VARCHAR2(16)
+		CONSTRAINT STAFF_STF_Fname_NN NOT NULL,
+	STF_Lname VARCHAR2(16)
+		CONSTRAINT STAFF_STF_Lname_NN NOT NULL,
+	STF_Ward_num NUMERIC(3)
+/*		CONSTRAINT STAFF_STF_Ward_num_FK REFERENCES WARD(Ward_num) */
+		CONSTRAINT STAFF_STF_Ward_num_NN NOT NULL
+)

@@ -1,0 +1,78 @@
+
+SQL*Loader: Release 10.2.0.1.0 - Production on Sun Nov 29 14:31:26 2009
+
+Copyright (c) 1982, 2005, Oracle.  All rights reserved.
+
+Control File:   sql_load_insert_STAFF.ctl
+Data File:      sql_load_insert_STAFF.dat
+  Bad File:     sql_load_insert_STAFF.bad
+  Discard File:  none specified
+ 
+ (Allow all discards)
+
+Number to load: ALL
+Number to skip: 0
+Errors allowed: 50
+Bind array:     64 rows, maximum of 256000 bytes
+Continuation:    none specified
+Path used:      Conventional
+
+Table STAFF, loaded from every logical record.
+Insert option in effect for this table: APPEND
+
+   Column Name                  Position   Len  Term Encl Datatype
+------------------------------ ---------- ----- ---- ---- ---------------------
+STAFF_ID                            FIRST     *   |       CHARACTER            
+STF_HOME_PHONE                       NEXT     *   |       CHARACTER            
+STF_CELL_PHONE                       NEXT     *   |       CHARACTER            
+POSITION                             NEXT     *   |       CHARACTER            
+WORK_AREA                            NEXT     *   |       CHARACTER            
+STF_ADDRESS                          NEXT     *   |       CHARACTER            
+STF_DOB                              NEXT     *   |       CHARACTER            
+STF_GENDER                           NEXT     *   |       CHARACTER            
+HRS_PER_WEEK                         NEXT     *   |       CHARACTER            
+PAYMENT_TYPE                         NEXT     *   |       CHARACTER            
+CONTRACT_TYPE                        NEXT     *   |       CHARACTER            
+STF_FNAME                            NEXT     *   |       CHARACTER            
+STF_LNAME                            NEXT     *   |       CHARACTER            
+STF_WARD_NUM                         NEXT     *   |       CHARACTER            
+
+Record 3: Rejected - Error on table STAFF, column WORK_AREA.
+ORA-01400: cannot insert NULL into ("ADELALOZ"."STAFF"."WORK_AREA")
+
+Record 5: Rejected - Error on table STAFF, column WORK_AREA.
+ORA-01400: cannot insert NULL into ("ADELALOZ"."STAFF"."WORK_AREA")
+
+Record 8: Rejected - Error on table STAFF, column WORK_AREA.
+ORA-01400: cannot insert NULL into ("ADELALOZ"."STAFF"."WORK_AREA")
+
+Record 11: Rejected - Error on table STAFF, column WORK_AREA.
+ORA-01400: cannot insert NULL into ("ADELALOZ"."STAFF"."WORK_AREA")
+
+Record 12: Rejected - Error on table STAFF, column WORK_AREA.
+ORA-01400: cannot insert NULL into ("ADELALOZ"."STAFF"."WORK_AREA")
+
+Record 13: Rejected - Error on table STAFF, column WORK_AREA.
+ORA-01400: cannot insert NULL into ("ADELALOZ"."STAFF"."WORK_AREA")
+
+
+Table STAFF:
+  8 Rows successfully loaded.
+  6 Rows not loaded due to data errors.
+  0 Rows not loaded because all WHEN clauses were failed.
+  0 Rows not loaded because all fields were null.
+
+
+Space allocated for bind array:                 231168 bytes(64 rows)
+Read   buffer bytes: 1048576
+
+Total logical records skipped:          0
+Total logical records read:            14
+Total logical records rejected:         6
+Total logical records discarded:        0
+
+Run began on Sun Nov 29 14:31:26 2009
+Run ended on Sun Nov 29 14:31:48 2009
+
+Elapsed time was:     00:00:21.48
+CPU time was:         00:00:00.02

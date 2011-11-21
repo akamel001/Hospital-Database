@@ -1,0 +1,464 @@
+SQL> start query_1.sql
+Enter your selection fields: stf_ward_num, staff_id, stf_home_phone, position, stf_cell_phone, work_area, stf_dob, stf_gender, hrs_per_week, stf_fname, stf_lname, contract_type
+Enter name of view: ward_view
+old   1: CREATE VIEW &view_name AS
+new   1: CREATE VIEW ward_view AS
+old   2: SELECT &selection
+new   2: SELECT stf_ward_num, staff_id, stf_home_phone, position, stf_cell_phone, work_area, stf_dob, stf_gender, hrs_per_week, stf_fname, stf_lname, contract_type
+'View ward_view was created successfully. Selecting all data from the view.'
+
+old   1: SELECT * from &view_name
+new   1: SELECT * from ward_view
+
+                                                  Employee Information                                                                                                                                                                                                                                      
+                                                                                                   Date                  Hours                                                                                                                                                                              
+      Ward          Home                             Cell                                          of                      Per First      Last       Contract                                                                                                                                               
+    Number ID       Phone        POSITION            Phone        Work Area                        Birth     Gender       Week Name       Name       Type                                                                                                                                                   
+========== ======== ============ =================== ============ ================================ ========= ====== ========== ========== ========== ========                                                                                                                                               
+         1 84126229 424-461-9892 Charge Nurse        609-413-7339 Intensive Care                   04-NOV-85 M              49 Taylor     Forbes     T                                                                                                                                                      
+           47080757 627-735-7111 Doctor              721-365-0131 Radiology                        31-OCT-83 F              22 Carly      Gillespie  P                                                                                                                                                      
+           44316069 249-204-1984 Nurse Practitioner  992-527-0391 Nursing Unit                     12-AUG-65 F              61 Burton     Reyes      P                                                                                                                                                      
+           65911001 834-607-7037 Doctor              196-719-4201 ER                               18-APR-68 F              64 Hillary    Sheppard   P                                                                                                                                                      
+           90732055 162-255-5532 Doctor              285-905-6760 Urgent Care                      27-MAY-78 M              36 Courtney   Wolfe      P                                                                                                                                                      
+           37058177 406-701-0094 Doctor              597-988-1773 Anesthesia Unit                  02-JUL-68 F              60 Mary       Roberson   P                                                                                                                                                      
+           60719131 650-734-0093 Senior Nurse        123-772-4154 Radiology                        10-APR-83 F              53 Dorian     Mullen     T                                                                                                                                                      
+           84482892 483-135-6939 Nurse Practitioner  444-211-0128 ER                               09-AUG-66 F              23 Duncan     Glenn      T                                                                                                                                                      
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                                  Page:  1                                                                                                                                                                                                                                                  
+
+                                                  Employee Information                                                                                                                                                                                                                                      
+                                                                                                   Date                  Hours                                                                                                                                                                              
+      Ward          Home                             Cell                                          of                      Per First      Last       Contract                                                                                                                                               
+    Number ID       Phone        POSITION            Phone        Work Area                        Birth     Gender       Week Name       Name       Type                                                                                                                                                   
+========== ======== ============ =================== ============ ================================ ========= ====== ========== ========== ========== ========                                                                                                                                               
+         2 99428000 314-758-1202 Junior Nurse        451-269-8126 Radiology                        20-MAY-73 M              23 Dana       Duncan     P                                                                                                                                                      
+           15311951 914-674-8830 Junior Nurse        676-402-2643 Intensive Care                   13-FEB-85 F              69 Carson     England    T                                                                                                                                                      
+           85713071 362-497-6450 Charge Nurse        477-688-3401 Intensive Care                   01-AUG-62 F              70 Kelsie     Perkins    T                                                                                                                                                      
+           97353745 209-959-2219 Doctor              153-544-8436 Intensive Care                   10-FEB-75 F              58 Charde     Drake      T                                                                                                                                                      
+           32830193 424-882-6132 Junior Nurse        829-643-6162 Anesthesia Unit                  10-DEC-61 F              30 Caryn      Yates      T                                                                                                                                                      
+           82597127 617-779-0675 Senior Nurse        267-345-2260 Nursing Unit                     23-FEB-85 M              76 Clare      Chambers   T                                                                                                                                                      
+           90513974 791-454-3858 Senior Nurse        672-959-2361 ER                               14-APR-68 M              47 Hedda      Frazier    P                                                                                                                                                      
+           29103093 386-772-3539 RN                  507-796-2892 Anesthesia Unit                  19-NOV-76 F              76 Maryam     Mclean     P                                                                                                                                                      
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                                  Page:  2                                                                                                                                                                                                                                                  
+
+                                                  Employee Information                                                                                                                                                                                                                                      
+                                                                                                   Date                  Hours                                                                                                                                                                              
+      Ward          Home                             Cell                                          of                      Per First      Last       Contract                                                                                                                                               
+    Number ID       Phone        POSITION            Phone        Work Area                        Birth     Gender       Week Name       Name       Type                                                                                                                                                   
+========== ======== ============ =================== ============ ================================ ========= ====== ========== ========== ========== ========                                                                                                                                               
+         3 24189426 132-264-2332 RN                  321-181-2969 Rehabilitation Services          28-APR-83 M              74 Yvette     Patton     P                                                                                                                                                      
+           85809763 703-671-8124 Nurse Practitioner  222-827-8484 Urgent Care                      14-JAN-75 M              43 Malachi    William    T                                                                                                                                                      
+           48738784 966-392-1760 Junior Nurse        402-518-2483 Coronary Unit                    23-NOV-71 F              41 Sierra     Carlson    P                                                                                                                                                      
+           20014973 228-128-9303 Nurse Practitioner  242-752-6082 Coronary Unit                    24-AUG-72 M              65 Joelle     Rowland    T                                                                                                                                                      
+           42945748 774-428-7179 RN                  619-211-0154 Urgent Care                      26-NOV-71 M              71 Salvador   Harper     P                                                                                                                                                      
+           67171092 639-105-3126 Nurse Practitioner  440-802-7072 Nursing Unit                     06-OCT-79 M              36 Boris      Myers      T                                                                                                                                                      
+           86967062 797-130-0304 Senior Nurse        157-242-3130 Nursing Unit                     08-APR-60 F              68 Yasir      Hansen     T                                                                                                                                                      
+           36728760 717-961-2465 Charge Nurse        842-446-5532 Nursing Unit                     13-MAR-60 M              31 Kirestin   Barnett    P                                                                                                                                                      
+           85475348 581-251-4849 RN                  639-660-3512 Radiology                        17-FEB-71 F              70 Renee      Shields    T                                                                                                                                                      
+           41273090 525-181-4941 RN                  905-913-1738 Rehabilitation Services          21-JUN-86 F              69 Nelle      Noble      T                                                                                                                                                      
+           75342989 846-623-2807 Senior Nurse        733-210-3764 Trauma                           21-DEC-66 M              62 Steven     Coffey     P                                                                                                                                                      
+
+
+
+
+
+
+
+
+
+
+
+
+                                                  Page:  3                                                                                                                                                                                                                                                  
+
+                                                  Employee Information                                                                                                                                                                                                                                      
+                                                                                                   Date                  Hours                                                                                                                                                                              
+      Ward          Home                             Cell                                          of                      Per First      Last       Contract                                                                                                                                               
+    Number ID       Phone        POSITION            Phone        Work Area                        Birth     Gender       Week Name       Name       Type                                                                                                                                                   
+========== ======== ============ =================== ============ ================================ ========= ====== ========== ========== ========== ========                                                                                                                                               
+         4 45688753 390-140-8063 Nurse Practitioner  873-460-7087 Urgent Care                      09-NOV-67 M              39 Macon      Leon       T                                                                                                                                                      
+           46458364 611-741-9592 Charge Nurse        379-844-4914 Anesthesia Unit                  30-OCT-70 M              30 Cassidy    Burks      P                                                                                                                                                      
+           61584028 974-354-8954 Junior Nurse        511-265-1774 Urgent Care                      28-FEB-62 F              52 Merrill    Whitaker   T                                                                                                                                                      
+           45289346 862-310-7145 Nurse Practitioner  953-848-8696 ER                               22-JAN-86 F              62 Kuame      Andrews    P                                                                                                                                                      
+           53990717 745-627-6851 Senior Nurse        937-487-0082 Anesthesia Unit                  13-DEC-86 F              77 Penelope   Scott      P                                                                                                                                                      
+           84955977 109-130-7943 Nurse Practitioner  695-920-6170 Anesthesia Unit                  21-DEC-75 M              31 Blythe     Stevens    P                                                                                                                                                      
+           48275268 474-150-5163 Doctor              846-481-7021 Rehabilitation Services          31-JUL-81 F              26 Kimberly   Wells      P                                                                                                                                                      
+           41194532 389-133-6841 Senior Nurse        729-158-6052 Radiology                        07-SEP-62 F              79 Angela     Fry        P                                                                                                                                                      
+           68761528 756-624-2494 RN                  220-614-0155 Intensive Care                   26-JAN-61 M              40 Ignatius   Cruz       P                                                                                                                                                      
+           27027284 914-643-4648 Nurse Practitioner  644-467-1251 Rehabilitation Services          06-FEB-66 F              74 Francesca  Lowe       P                                                                                                                                                      
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                                  Page:  4                                                                                                                                                                                                                                                  
+
+                                                  Employee Information                                                                                                                                                                                                                                      
+                                                                                                   Date                  Hours                                                                                                                                                                              
+      Ward          Home                             Cell                                          of                      Per First      Last       Contract                                                                                                                                               
+    Number ID       Phone        POSITION            Phone        Work Area                        Birth     Gender       Week Name       Name       Type                                                                                                                                                   
+========== ======== ============ =================== ============ ================================ ========= ====== ========== ========== ========== ========                                                                                                                                               
+         5 85843246 879-718-8641 Doctor              612-328-6889 Coronary Unit                    05-JAN-71 F              21 Garrett    Livingston P                                                                                                                                                      
+           98110169 335-682-3086 Charge Nurse        451-710-7313 Rehabilitation Services          10-JAN-63 F              30 Veda       Burris     P                                                                                                                                                      
+           51907969 914-865-3091 Doctor              559-468-5924 Coronary Unit                    22-DEC-83 F              21 Isabella   Walls      P                                                                                                                                                      
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                                  Page:  5                                                                                                                                                                                                                                                  
+
+                                                  Employee Information                                                                                                                                                                                                                                      
+                                                                                                   Date                  Hours                                                                                                                                                                              
+      Ward          Home                             Cell                                          of                      Per First      Last       Contract                                                                                                                                               
+    Number ID       Phone        POSITION            Phone        Work Area                        Birth     Gender       Week Name       Name       Type                                                                                                                                                   
+========== ======== ============ =================== ============ ================================ ========= ====== ========== ========== ========== ========                                                                                                                                               
+         6 75682043 935-275-8131 RN                  829-176-7481 Coronary Unit                    24-MAY-61 M              51 Lester     Kramer     T                                                                                                                                                      
+           89100550 564-190-6100 Doctor              471-687-3240 Radiology                        16-DEC-65 M              72 Amena      Whitfield  P                                                                                                                                                      
+           30595990 103-673-8125 Nurse Practitioner  148-375-4241 Anesthesia Unit                  18-NOV-67 M              20 Daryl      Kennedy    T                                                                                                                                                      
+           73528251 788-505-3874 Senior Nurse        965-266-7356 Trauma                           24-NOV-76 F              52 Michelle   Alvarez    T                                                                                                                                                      
+           96007188 418-751-0339 Nurse Practitioner  487-223-0407 Radiology                        05-MAY-73 F              71 Leslie     Weeks      P                                                                                                                                                      
+           14289723 319-307-9738 Charge Nurse        463-802-3126 Trauma                           22-JUL-67 M              24 Violet     Combs      P                                                                                                                                                      
+           48300576 620-716-5531 Doctor              500-864-4400 Coronary Unit                    19-JUN-68 M              30 Alvin      Forbes     T                                                                                                                                                      
+           72346224 702-152-0323 Nurse Practitioner  651-942-2932 ER                               30-DEC-75 F              38 Jonah      Campbell   T                                                                                                                                                      
+           94568662 433-921-1554 Doctor              250-522-4529 Coronary Unit                    25-SEP-72 M              44 Indigo     Mcknight   P                                                                                                                                                      
+           51858332 425-806-9788 Junior Nurse        727-489-2871 Trauma                           29-JAN-63 M              59 Amber      Shepard    P                                                                                                                                                      
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                                  Page:  6                                                                                                                                                                                                                                                  
+
+                                                  Employee Information                                                                                                                                                                                                                                      
+                                                                                                   Date                  Hours                                                                                                                                                                              
+      Ward          Home                             Cell                                          of                      Per First      Last       Contract                                                                                                                                               
+    Number ID       Phone        POSITION            Phone        Work Area                        Birth     Gender       Week Name       Name       Type                                                                                                                                                   
+========== ======== ============ =================== ============ ================================ ========= ====== ========== ========== ========== ========                                                                                                                                               
+         7 81814200 866-272-2726 Doctor              863-417-3657 Nursing Unit                     04-APR-72 F              75 Eve        Wynn       T                                                                                                                                                      
+           58675647 385-565-7847 Junior Nurse        592-716-4615 Nursing Unit                     08-JAN-72 M              71 Lana       Dyer       T                                                                                                                                                      
+           71595989 410-581-5228 Doctor              946-600-4317 Urgent Care                      28-AUG-67 M              71 Idona      Sellers    P                                                                                                                                                      
+           44431165 224-324-4029 Doctor              403-171-3625 Trauma                           05-AUG-84 F              30 Clayton    Myers      P                                                                                                                                                      
+           76753286 637-847-3390 Nurse Practitioner  882-648-6537 Coronary Unit                    02-JUL-71 F              80 Maile      Osborne    T                                                                                                                                                      
+           80198089 897-879-3021 Doctor              238-837-9989 Anesthesia Unit                  06-SEP-77 M              49 Dillon     Moses      T                                                                                                                                                      
+           93098085 469-901-4393 RN                  398-619-3479 Intensive Care                   02-NOV-69 M              77 MacKensie  Jacobs     P                                                                                                                                                      
+           37014047 479-483-3982 Charge Nurse        420-999-3094 ER                               16-APR-83 M              67 Nichole    Frederick  T                                                                                                                                                      
+           43470544 755-347-0450 Senior Nurse        557-350-4973 ER                               15-AUG-77 M              24 Felicia    Shaw       P                                                                                                                                                      
+           34921758 714-737-2646 Junior Nurse        805-506-7886 Trauma                           08-OCT-60 F              44 Tatum      Mcmillan   P                                                                                                                                                      
+           70992488 632-324-4663 Nurse Practitioner  443-810-4349 Intensive Care                   30-AUG-62 F              20 Rudyard    Fry        P                                                                                                                                                      
+           27614644 773-492-2447 RN                  190-522-5349 Trauma                           28-JUL-73 F              45 Upton      Farrell    P                                                                                                                                                      
+           52410612 694-779-0964 Senior Nurse        886-866-1858 Radiology                        02-JUN-83 F              52 Germane    Foster     T                                                                                                                                                      
+           57340311 689-441-5166 Nurse Practitioner  247-560-9764 Radiology                        13-MAR-67 M              56 Ann        Mason      P                                                                                                                                                      
+
+
+
+
+
+
+
+
+
+                                                  Page:  7                                                                                                                                                                                                                                                  
+
+                                                  Employee Information                                                                                                                                                                                                                                      
+                                                                                                   Date                  Hours                                                                                                                                                                              
+      Ward          Home                             Cell                                          of                      Per First      Last       Contract                                                                                                                                               
+    Number ID       Phone        POSITION            Phone        Work Area                        Birth     Gender       Week Name       Name       Type                                                                                                                                                   
+========== ======== ============ =================== ============ ================================ ========= ====== ========== ========== ========== ========                                                                                                                                               
+         8 43008117 957-701-8555 RN                  739-905-6488 Intensive Care                   03-FEB-65 F              47 Hop        Frost      T                                                                                                                                                      
+           67170366 677-175-5568 Nurse Practitioner  654-586-5269 Urgent Care                      25-JUL-75 F              20 Jayme      Talley     T                                                                                                                                                      
+           69175452 550-368-8990 Doctor              825-674-9915 Coronary Unit                    17-MAY-83 M              72 Ira        Welch      T                                                                                                                                                      
+           45469365 148-198-8987 Nurse Practitioner  924-955-7372 Trauma                           28-MAR-72 F              38 David      Melendez   T                                                                                                                                                      
+           11358640 922-533-4802 Nurse Practitioner  672-856-9309 Coronary Unit                    24-APR-69 M              80 Sonia      Schwartz   T                                                                                                                                                      
+           83055191 613-635-4024 Doctor              872-862-0680 Urgent Care                      12-MAR-73 M              36 Burton     Henson     P                                                                                                                                                      
+           19067314 448-744-0607 Nurse Practitioner  886-915-6825 Urgent Care                      18-SEP-82 F              44 Hedy       Franks     T                                                                                                                                                      
+           98425068 407-663-9348 Charge Nurse        155-651-7850 Anesthesia Unit                  25-SEP-62 F              23 Lucius     Madden     T                                                                                                                                                      
+           53742218 621-989-5221 Doctor              831-185-4687 Coronary Unit                    12-APR-82 M              30 Catherine  Carey      T                                                                                                                                                      
+           67983770 957-938-5973 Nurse Practitioner  645-511-5469 Intensive Care                   04-FEB-82 M              66 Cleo       Conley     P                                                                                                                                                      
+           57527154 849-947-7474 Nurse Practitioner  157-710-8428 Urgent Care                      15-JUL-76 M              26 Shaine     Banks      P                                                                                                                                                      
+           85529460 961-305-6214 Nurse Practitioner  879-138-1722 Anesthesia Unit                  22-AUG-60 M              51 Kylynn     Terrell    T                                                                                                                                                      
+           17128191 724-356-2037 RN                  716-804-3164 Urgent Care                      08-SEP-78 F              24 Valentine  Hooper     T                                                                                                                                                      
+
+
+
+
+
+
+
+
+
+
+                                                  Page:  8                                                                                                                                                                                                                                                  
+
+                                                  Employee Information                                                                                                                                                                                                                                      
+                                                                                                   Date                  Hours                                                                                                                                                                              
+      Ward          Home                             Cell                                          of                      Per First      Last       Contract                                                                                                                                               
+    Number ID       Phone        POSITION            Phone        Work Area                        Birth     Gender       Week Name       Name       Type                                                                                                                                                   
+========== ======== ============ =================== ============ ================================ ========= ====== ========== ========== ========== ========                                                                                                                                               
+         9 85172718 794-987-0178 RN                  229-484-0579 Radiology                        02-SEP-76 F              28 Karleigh   Harrington P                                                                                                                                                      
+           82893235 439-484-7290 Doctor              673-488-5961 Coronary Unit                    29-DEC-82 M              70 Brenna     Mckinney   T                                                                                                                                                      
+           18188898 604-482-6809 Nurse Practitioner  875-337-3297 ER                               06-AUG-67 F              45 Odessa     Bruce      T                                                                                                                                                      
+           93741577 965-182-6481 RN                  811-486-4947 Anesthesia Unit                  13-APR-66 M              75 Doris      Pena       T                                                                                                                                                      
+           23759888 351-507-7661 Charge Nurse        556-352-4971 Radiology                        07-JUN-84 M              53 Shea       Jackson    P                                                                                                                                                      
+           77997406 198-826-0313 Senior Nurse        856-209-4466 Anesthesia Unit                  18-JAN-71 M              27 Preston    Everett    T                                                                                                                                                      
+           94964429 992-783-2567 Nurse Practitioner  784-981-7956 Anesthesia Unit                  24-SEP-69 M              24 Anthony    Morgan     P                                                                                                                                                      
+           39726187 553-953-8305 Doctor              196-766-0204 Anesthesia Unit                  30-AUG-79 F              58 Freya      Ferrell    T                                                                                                                                                      
+           30563704 820-669-2137 RN                  711-794-0774 Anesthesia Unit                  10-APR-66 M              22 Patience   Mccall     P                                                                                                                                                      
+           59636179 300-656-4061 Doctor              513-327-8160 ER                               07-DEC-86 F              28 Keaton     Roberts    P                                                                                                                                                      
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                                  Page:  9                                                                                                                                                                                                                                                  
+
+                                                  Employee Information                                                                                                                                                                                                                                      
+                                                                                                   Date                  Hours                                                                                                                                                                              
+      Ward          Home                             Cell                                          of                      Per First      Last       Contract                                                                                                                                               
+    Number ID       Phone        POSITION            Phone        Work Area                        Birth     Gender       Week Name       Name       Type                                                                                                                                                   
+========== ======== ============ =================== ============ ================================ ========= ====== ========== ========== ========== ========                                                                                                                                               
+        10 25821006 563-717-9578 RN                  407-137-5899 Rehabilitation Services          10-JAN-63 F              65 Jeremy     Dennis     P                                                                                                                                                      
+           74302996 703-476-7007 Charge Nurse        565-294-8017 Urgent Care                      25-OCT-69 M              29 Eve        Cantrell   T                                                                                                                                                      
+           24985247 803-162-3321 Doctor              449-580-4332 Intensive Care                   19-SEP-82 M              22 Justin     Mcneil     T                                                                                                                                                      
+           14132035 634-156-7444 Nurse Practitioner  655-223-6358 Anesthesia Unit                  03-OCT-60 M              36 Jacob      Dorsey     P                                                                                                                                                      
+           56478142 149-338-4204 Senior Nurse        659-821-1736 Radiology                        04-SEP-65 M              29 Whilemina  Chen       P                                                                                                                                                      
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                                  Page: 10                                                                                                                                                                                                                                                  
+
+                                                  Employee Information                                                                                                                                                                                                                                      
+                                                                                                   Date                  Hours                                                                                                                                                                              
+      Ward          Home                             Cell                                          of                      Per First      Last       Contract                                                                                                                                               
+    Number ID       Phone        POSITION            Phone        Work Area                        Birth     Gender       Week Name       Name       Type                                                                                                                                                   
+========== ======== ============ =================== ============ ================================ ========= ====== ========== ========== ========== ========                                                                                                                                               
+        11 39279590 370-807-5278 Senior Nurse        437-340-9372 Rehabilitation Services          20-JUL-75 M              54 September  Curry      T                                                                                                                                                      
+           14635826 800-453-3883 Junior Nurse        901-620-3544 ER                               08-MAY-79 F              21 Meghan     Glover     T                                                                                                                                                      
+           70750289 919-184-6905 RN                  929-476-3214 ER                               16-MAY-82 F              75 Gemma      Solis      P                                                                                                                                                      
+           60102112 934-196-7028 Doctor              598-738-5670 Coronary Unit                    26-OCT-82 F              71 Olympia    Horne      P                                                                                                                                                      
+           69571215 725-473-2589 Doctor              349-732-7728 Coronary Unit                    24-JAN-76 M              67 Otto       Le         P                                                                                                                                                      
+           26211109 793-990-1044 Nurse Practitioner  832-463-1242 Trauma                           10-JAN-79 M              31 Ivory      Davis      P                                                                                                                                                      
+           16214367 619-797-1557 Charge Nurse        430-266-5185 Intensive Care                   24-JUL-78 F              75 Britanney  Malone     P                                                                                                                                                      
+           86638197 916-219-8053 Senior Nurse        413-667-8691 Radiology                        24-JUL-71 M              61 Emerald    Robles     T                                                                                                                                                      
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                                  Page: 11                                                                                                                                                                                                                                                  
+
+                                                  Employee Information                                                                                                                                                                                                                                      
+                                                                                                   Date                  Hours                                                                                                                                                                              
+      Ward          Home                             Cell                                          of                      Per First      Last       Contract                                                                                                                                               
+    Number ID       Phone        POSITION            Phone        Work Area                        Birth     Gender       Week Name       Name       Type                                                                                                                                                   
+========== ======== ============ =================== ============ ================================ ========= ====== ========== ========== ========== ========                                                                                                                                               
+        12 30649213 135-752-9560 RN                  907-846-9344 Urgent Care                      20-DEC-64 F              71 Octavia    Patterson  P                                                                                                                                                      
+           91994263 985-703-6004 Junior Nurse        250-135-6101 Radiology                        15-APR-61 F              49 Leandra    Jones      P                                                                                                                                                      
+           86143294 395-190-6526 Junior Nurse        445-590-9616 Rehabilitation Services          26-OCT-63 F              48 Wyoming    Davenport  T                                                                                                                                                      
+           30889098 679-616-5487 Junior Nurse        813-193-4793 Anesthesia Unit                  11-AUG-70 F              41 Isaiah     Evans      P                                                                                                                                                      
+           34168083 223-133-3978 Charge Nurse        454-214-3894 ER                               23-JUN-83 F              58 Shaeleigh  Hoover     P                                                                                                                                                      
+           39804930 944-356-2559 Nurse Practitioner  756-402-4535 Coronary Unit                    20-JUL-77 F              64 Holly      Calhoun    T                                                                                                                                                      
+           98204310 435-923-5853 Nurse Practitioner  393-660-7710 Coronary Unit                    30-DEC-61 F              37 Logan      Chapman    P                                                                                                                                                      
+           15982979 276-561-0835 RN                  876-841-7819 Urgent Care                      12-FEB-70 F              31 Ali        Alford     T                                                                                                                                                      
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                                  Page: 12                                                                                                                                                                                                                                                  
+
+                                                  Employee Information                                                                                                                                                                                                                                      
+                                                                                                   Date                  Hours                                                                                                                                                                              
+      Ward          Home                             Cell                                          of                      Per First      Last       Contract                                                                                                                                               
+    Number ID       Phone        POSITION            Phone        Work Area                        Birth     Gender       Week Name       Name       Type                                                                                                                                                   
+========== ======== ============ =================== ============ ================================ ========= ====== ========== ========== ========== ========                                                                                                                                               
+        13 66361460 309-241-4136 Charge Nurse        923-930-8887 Trauma                           30-MAR-65 F              64 Maya       Ewing      P                                                                                                                                                      
+           54508648 122-988-0597 Nurse Practitioner  238-409-5068 ER                               15-MAY-82 F              54 Hammett    Olson      T                                                                                                                                                      
+           51406697 621-248-1143 RN                  378-112-7529 Urgent Care                      13-DEC-72 M              66 Quemby     Fry        T                                                                                                                                                      
+           70276325 180-141-1211 Doctor              993-376-6674 Urgent Care                      25-SEP-66 M              55 Teegan     Walker     P                                                                                                                                                      
+           29063460 741-663-5416 Junior Nurse        234-667-7269 Trauma                           07-MAR-69 M              47 Blake      Lopez      P                                                                                                                                                      
+           92162395 979-724-5897 Junior Nurse        974-355-7237 Trauma                           02-DEC-85 M              47 Nero       Guthrie    P                                                                                                                                                      
+           41548422 103-181-5714 Doctor              116-393-9148 Coronary Unit                    10-SEP-69 M              20 Elijah     Poole      P                                                                                                                                                      
+           78712041 604-923-9593 RN                  314-935-9231 Anesthesia Unit                  29-SEP-73 F              41 Salvador   Lawson     P                                                                                                                                                      
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                                  Page: 13                                                                                                                                                                                                                                                  
+
+                                                  Employee Information                                                                                                                                                                                                                                      
+                                                                                                   Date                  Hours                                                                                                                                                                              
+      Ward          Home                             Cell                                          of                      Per First      Last       Contract                                                                                                                                               
+    Number ID       Phone        POSITION            Phone        Work Area                        Birth     Gender       Week Name       Name       Type                                                                                                                                                   
+========== ======== ============ =================== ============ ================================ ========= ====== ========== ========== ========== ========                                                                                                                                               
+        14 15608524 512-926-7760 Senior Nurse        200-801-2581 Intensive Care                   28-MAR-77 M              41 Carly      Cotton     T                                                                                                                                                      
+           40071322 407-655-6935 RN                  820-191-5021 Coronary Unit                    09-JUN-82 M              47 Kirk       Kinney     T                                                                                                                                                      
+           37419973 124-292-7442 Junior Nurse        706-875-4516 ER                               15-DEC-65 M              52 Gretchen   Bruce      P                                                                                                                                                      
+           14139883 345-414-2854 Nurse Practitioner  582-547-3416 Trauma                           02-JAN-68 M              51 Yvonne     Trujillo   P                                                                                                                                                      
+           76729795 649-225-2138 Junior Nurse        689-457-2169 Radiology                        20-JUL-80 F              26 Jenna      Collier    P                                                                                                                                                      
+           96324730 156-363-4899 Doctor              862-929-3706 Trauma                           25-APR-68 M              68 Olga       Mccarthy   T                                                                                                                                                      
+           16798530 496-287-8402 Senior Nurse        392-997-3280 Intensive Care                   13-APR-80 M              24 Flavia     Wolf       T                                                                                                                                                      
+           74467906 356-639-7617 Doctor              843-744-6581 Anesthesia Unit                  25-JAN-63 F              45 Chadwick   Frank      P                                                                                                                                                      
+           88843607 940-589-5315 RN                  316-682-3528 Radiology                        25-AUG-82 F              74 Jemima     Green      T                                                                                                                                                      
+           56545174 360-674-1585 Charge Nurse        907-731-9986 Trauma                           18-NOV-68 M              63 Ila        Delgado    P                                                                                                                                                      
+           68421862 606-790-4024 Senior Nurse        957-546-6359 Intensive Care                   28-MAR-62 F              52 Aphrodite  Horn       P                                                                                                                                                      
+           25392359 704-898-7987 Junior Nurse        695-355-4454 Anesthesia Unit                  28-OCT-75 M              68 Brandon    Gates      P                                                                                                                                                      
+           37877749 607-866-3976 RN                  621-438-5714 Intensive Care                   09-JAN-83 M              57 Xaviera    Lambert    P                                                                                                                                                      
+           70423454 148-840-2560 RN                  209-951-8673 Rehabilitation Services          29-NOV-70 M              25 Zelenia    Gibson     T                                                                                                                                                      
+           19277732 997-346-1912 Nurse Practitioner  946-586-9492 Radiology                        16-AUG-67 F              53 Alice      Mckinney   T                                                                                                                                                      
+
+
+
+
+
+
+
+
+                                                  Page: 14                                                                                                                                                                                                                                                  
+
+                                                  Employee Information                                                                                                                                                                                                                                      
+                                                                                                   Date                  Hours                                                                                                                                                                              
+      Ward          Home                             Cell                                          of                      Per First      Last       Contract                                                                                                                                               
+    Number ID       Phone        POSITION            Phone        Work Area                        Birth     Gender       Week Name       Name       Type                                                                                                                                                   
+========== ======== ============ =================== ============ ================================ ========= ====== ========== ========== ========== ========                                                                                                                                               
+        15 75843825 897-360-9855 RN                  436-135-3717 Coronary Unit                    12-JUN-79 M              56 Megan      Marks      P                                                                                                                                                      
+           73751555 694-921-0410 RN                  600-607-2031 Intensive Care                   22-OCT-72 F              37 Uma        Bullock    P                                                                                                                                                      
+           18314141 739-444-1317 Charge Nurse        404-896-9582 Rehabilitation Services          11-OCT-70 F              63 Candace    Underwood  P                                                                                                                                                      
+           97314000 103-607-0495 Senior Nurse        342-767-0253 Trauma                           15-JAN-68 M              49 Pandora    Holmes     P                                                                                                                                                      
+           37821956 792-543-8372 RN                  117-405-0351 Nursing Unit                     01-MAR-62 M              65 Castor     Velazquez  P                                                                                                                                                      
+           43944706 454-423-0540 Nurse Practitioner  509-500-1661 Rehabilitation Services          09-DEC-73 M              76 Trevor     Stafford   T                                                                                                                                                      
+           19724546 276-224-9077 RN                  747-612-2714 Intensive Care                   26-FEB-85 M              41 Aimee      Wilkins    T                                                                                                                                                      
+           78285008 862-688-2550 Junior Nurse        326-558-8635 Urgent Care                      21-OCT-79 F              40 Shelly     Watts      P                                                                                                                                                      
+           26113999 620-795-9899 Senior Nurse        173-137-8795 Coronary Unit                    12-NOV-80 M              66 Bryar      Mcknight   T                                                                                                                                                      
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                                  Page: 15                                                                                                                                                                                                                                                  
+
+ 
+SQL> spool off

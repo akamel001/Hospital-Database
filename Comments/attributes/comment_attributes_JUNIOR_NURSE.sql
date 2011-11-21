@@ -1,0 +1,1 @@
+/*Project Option: Young at Heart Hospital Management SystemTEAM: The GUI DucksComments on Attributes for JUNIOR_NURSECOMMENT BY: Abdelrahman Kamel*/COMMENT ON COLUMN JUNIOR_NURSE.Junior_Nurse_id	IS 'This attribute is the primary key of the table. 		The attribute is 8 characters long and is alphanumeric.'

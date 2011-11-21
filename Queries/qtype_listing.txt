@@ -1,0 +1,51 @@
+SQL> start query_2.sql
+Enter the Qualification type: BS Nursing
+  1  SELECT STF_Gender, STF_Lname, staff_id, Position, STF_Ward_num, Hrs_Per_Week, QINSTITUTION, Salary_scale
+  2  FROM staff, staff2, QUALIFICATION
+  3  WHERE staff.position = staff2.s_position
+  4  AND qualification.qtype = '&qtp'
+  5  AND qualification.q_staff_id = staff.staff_id
+  6* ORDER BY stf_gender
+old   4: AND qualification.qtype = '&qtp'
+new   4: AND qualification.qtype = 'BS Nursing'
+
+                                                  Full Employee info (BS Nursing)                                                                                                                                   
+                                                                Hours                                                                                                                                   
+        Last                                          Ward        Per Qualification                                                                                                                     
+Gender  Name       ID       POSITION                Number       Week Institution                         Salary                                                                                        
+======= ========== ======== =================== ========== ========== ================================ =========                                                                                        
+F       Bullock    73751555 RN                          15         37 MIT                                $58,000                                                                                        
+        Shields    85475348 RN                           3         70 USC                                $58,000                                                                                        
+        Roberts    59636179 Doctor                       9         28 MIT                               $100,086                                                                                        
+        Alvarez    73528251 Senior Nurse                 6         52 USC                                $85,086                                                                                        
+        Reyes      44316069 Nurse Practitioner           1         61 CSULA                              $79,000                                                                                        
+        Shelton    38260068 Junior Nurse                16         48 USC                                $60,203                                                                                        
+        Fry        41194532 Senior Nurse                 4         79 USC                                $85,086                                                                                        
+        Mclean     29103093 RN                           2         76 CSUSB                              $58,000                                                                                        
+        Melendez   45469365 Nurse Practitioner           8         38 MIT                                $79,000                                                                                        
+        Burris     98110169 Charge Nurse                 5         30 UCI                                $83,186                                                                                        
+        Horne      60102112 Doctor                      11         71 CSUSB                             $100,086                                                                                        
+                                                                                                                                                                                                        
+                                                                                                                                                                                                        
+M       Dalton     77179918 RN                          16         20 CSUSB                              $58,000                                                                                        
+        Mccall     30563704 RN                           9         22 CSULA                              $58,000                                                                                        
+        Fry        51406697 RN                          13         66 UCR                                $58,000                                                                                        
+        Cruz       68761528 RN                           4         40 CSULA                              $58,000                                                                                        
+        Dorsey     14132035 Nurse Practitioner          10         36 CSULB                              $79,000                                                                                        
+        Rowland    20014973 Nurse Practitioner           3         65 CSUSB                              $79,000                                                                                        
+        Patton     24189426 RN                           3         74 CSUSB                              $58,000                                                                                        
+        Jacobs     93098085 RN                           7         77 MIT                                $58,000                                                                                        
+        Moses      80198089 Doctor                       7         49 MIT                               $100,086                                                                                        
+        Madden     99907253 Doctor                      16         78 CSULB                             $100,086                                                                                        
+        Kramer     75682043 RN                           6         51 CSUSB                              $58,000                                                                                        
+        Jackson    23759888 Charge Nurse                 9         53 CSULB                              $83,186                                                                                        
+                                                                                                                                                                                                        
+                                                                                                                                                                                                        
+
+
+
+
+
+
+                                                  Page:   1                                                                                                                                             
+SQL> spool off
